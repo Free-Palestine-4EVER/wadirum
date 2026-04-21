@@ -4,7 +4,6 @@ import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { FAQSection } from "@/components/faq-section"
 import { AnimateOnScroll } from "@/components/animate-on-scroll"
-import { FlipBook } from "@/components/flipbook"
 import { generateTouristAttractionSchema } from "@/lib/schema"
 import type { Metadata } from "next"
 
@@ -572,21 +571,6 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
-        </section>
-      </AnimateOnScroll>
-
-      {/* Destination Guide Book Section */}
-      <AnimateOnScroll>
-        <section className="py-16 md:py-24 bg-gradient-to-b from-amber-50 to-white">
-          <div className="container">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold mb-3">Wadi Rum Destination Guide</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Browse our official destination guide and discover everything Wadi Rum has to offer — from ancient history to thrilling adventures.
-              </p>
-            </div>
-            <FlipBook />
           </div>
         </section>
       </AnimateOnScroll>
